@@ -1,0 +1,13 @@
+<h1>You are on the add page</h1>
+
+<form id="add_from" method="POST" action=".">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input name="dev_name" /></td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Add" />
+</form>

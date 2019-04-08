@@ -11,3 +11,7 @@
     {% endfor %}
     </ul>
 {% endif %}
+
+<form method="GET" action="{% url 'add' %}">
+    <input type="submit" value="Add" />
+</form>
