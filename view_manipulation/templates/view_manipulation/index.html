@@ -1,0 +1,13 @@
+<h1>Select one to see the details info</h1>
+
+{% if items %}
+    <ul>
+    {% for item in items %}
+        <li>
+            <a href="{% url 'details' item.name %}">
+                {{item.name}}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
