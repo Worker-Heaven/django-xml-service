@@ -131,8 +131,8 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
 
 CELERY_BEAT_SCHEDULE = {
-    'hello': {
-        'task': 'view_manipulation.tasks.hello',
-        'schedule': timedelta(seconds=3)  # execute every minute
+    'add': {
+        'task': 'add_to_django_model',
+        'schedule': timedelta(seconds=5)  # execute every minute
     }
 }
