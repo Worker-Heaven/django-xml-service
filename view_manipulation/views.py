@@ -41,8 +41,7 @@ def add(request):
         try:
             name = request.POST['dev_name']
             
-            q = Item(name=name)
-            q.save()
+            Item.objects.get_or_create(name=name)
             
             print('q.name', q.name)
             print('all data ------------', [ item.name for item in Item.objects.all()])
